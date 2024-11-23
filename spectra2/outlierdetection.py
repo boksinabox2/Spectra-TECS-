@@ -37,7 +37,7 @@ T = pca.fit_transform(StandardScaler().fit_transform(X))
 #     plt.title('Score Plot')
 # plt.show()
 
-#Euclidean distance? (experiment)
+#Euclidean distance? perchance? (experiment)
 
 #redraw score plot
 # fig = plt.figure(figsize=(8,6))
