@@ -1,4 +1,4 @@
-#1 using PCA and mahalanobis distance
+#1 using PCA and mahalanobis distance to detect outliers
 
 #load and plot data
 import pandas as pd

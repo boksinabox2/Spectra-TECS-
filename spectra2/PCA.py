@@ -67,7 +67,7 @@ pca2 = pca(n_components=4) #change depending on how many PC's to use
 # Transform on the scaled features
 Xt2 = pca2.fit_transform(nfeat2)
 
-#display the score plot of the first two principal components
+# to display the score plot of the first two principal components
 
 #labels for the plot legend
 labplot = ["0/8 Milk","1/8 Milk","2/8 Milk", "3/8 Milk", \

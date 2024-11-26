@@ -1,3 +1,4 @@
+#savitzky golay smoothing to remove noise
 import numpy as np
 import pandas as pd # type: ignore
 import matplotlib.pyplot as plt
