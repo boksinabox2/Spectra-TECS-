@@ -1,4 +1,4 @@
-#PCA to discriminate between the different concentrations of lactose in milk
+#PCA to discriminate between the different concentrations of lactose in milk (orignial PCA code)
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
