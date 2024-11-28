@@ -27,7 +27,24 @@ hyperparameters = {
     'smoothing_window': 5,  # Width of the selection window for Savitzky-Golay filter
     'polynomial_order': 2,   # Order of the polynomial for Savitzky-Golay filter
     'file_path': "C:/NIRsampledatarocks/NIR data Earth analogs/NIR data Earth analogs.xlsx",  # URL of the dataset
+    "interval": {
+        "start": 500,
+        "end": 600,
+        "step": 1
+    },
+#for wavelettransform
+    'file_path_wavelet': "C:/NIRsampledatarocks/NIR data Earth analogs/NIR data Earth analogs.xlsx",  # URL of the dataset
+    "wavelet_transform": {
+        "wavelet_type": 'sym4',
+        "level": 7,
+        "alpha": 0.9
+    },
+#for outlier detection
+    'data': 'https://raw.githubusercontent.com/nevernervous78/nirpyresearch/master/data/plums.csv', 
+    'n_components': 5
     
-}
+    }
+
+
                                 
  

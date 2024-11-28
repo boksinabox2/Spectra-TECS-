@@ -22,9 +22,15 @@ X_smooth_1 = savgol_filter(X, w, polyorder=p, deriv=0)  # Simple smoothing (no d
 X_smooth_2 = savgol_filter(X, 2 * w + 1, polyorder=p, deriv=0)
 X_smooth_3 = savgol_filter(X, 4 * w + 1, polyorder=3 * p, deriv=0)
 
+#getting intervals
+start = hyperparameters["interval"]["start"]
+end = hyperparameters["interval"]["end"]
+step = hyperparameters["interval"]["step"]
+
+
 # Plotting an interval of the whole spectra, after applying the different smoothings
 plt.figure(figsize=(9, 6))
-interval = np.arange(500, 600, 1)
+interval = np.arange(start, end, step)
 plt.plot(wl[interval], X[interval], 'b', label='No smoothing')
 plt.plot(wl[interval], X_smooth_1[interval], 'r', label=f'Smoothing: w/p = {w/p}')
 plt.plot(wl[interval], X_smooth_2[interval], 'g', label=f'Smoothing: w/p = {2 * w + 1}/{p}')
